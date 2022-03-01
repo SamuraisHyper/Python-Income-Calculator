@@ -1,0 +1,21 @@
+import math
+
+Greeting = 'Hello'
+name = input("What is your name?: ")
+
+print(Greeting, name)
+hourly_pay = input('hourly pay?: ')
+weekly_hours = input('Weekly hours?: ')
+weekly_pay = int(hourly_pay) * int(weekly_hours)
+monthly_pay = int(weekly_pay) * int(4)
+yearly_pay = int(monthly_pay) * int(12)
+weekly_expenses = input('What is your weekly expenses?: ')
+monthly_expenses = int(weekly_expenses) * int(4)
+yearly_expenses = int(monthly_expenses) * int(12)
+yearly_income = int(yearly_pay) - int(yearly_expenses)
+print("Your yearly income is:")
+print(yearly_income)
+savings_percent1 = int(yearly_income) * int(10)
+savings_percentF = int(savings_percent1) / int(100)
+print('Your savings should be:')
+print(savings_percentF)
